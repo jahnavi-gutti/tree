@@ -3,7 +3,7 @@ class binarytreenode:
         self.data=data 
         self.left=None
         self.right=None
-def preorder(root):
+def postorder(root):
     if root==None:
         return
     preorder(root.left)
@@ -18,7 +18,7 @@ btn1.left=btn2
 btn1.right=btn3
 btn2.left=btn4
 btn2.right=btn5
-preorder(btn1)
+postorder(btn1)
         
 
 """
